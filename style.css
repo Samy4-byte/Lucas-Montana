@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+body {
+    background: #272A2F;
+
+}
+
+header {
+    width: 100vw;
+    height: 58px;
+    background: #19849B;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+    line-height: 34px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.about {
+    width: 100vw;
+    height: 510px;
+    display: flex;
+    justify-content: center;
+}
+
+.lucas-big-img {
+    width: 411px;
+    height: 355px;
+    margin-top: 109px;
+    margin-right: 68px;
+}
+
+.info {
+    width: 559px;
+    margin-top: 109px;
+}
+
+.header-text {
+    width: 559px;
+    border-bottom: 4px solid #19849B;
+    padding-bottom: 14px;
+}
+
+.header-text h1 {
+    font-size: 30px;
+    line-height: 34px;
+}
+
+.info-text {
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 14px;
+    margin-bottom: 30px;
+}
+
+.info-p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 30px;
+}
+
+
+.contact {
+    width: 293px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    background-color: #272A2F;
+    border: solid 2px;
+}
+
+.contact:hover {
+    background-color: #19849B;;
+    border: none;
+}
+
+
+.gallery {
+    width: 100vw;
+    height: 890px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 1038px;
+}
+
+.portfolio {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 15px;
+}
+
+.gallery-text {
+    width: 766px;
+    margin-bottom: 28px;
+}
+
+
+.img-item {
+    width: 244px;
+    height: 244px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.img-item:nth-of-type(4n) {
+    margin-right: 0;
+}
+
+
+.ligth {
+    width: 100vw;
+    height: 161px;
+    background: #19849B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.lucas-small-img {
+    width: 94px;
+    height: 94px;
+    border-radius: 50%;
+    margin-right: 16px;
+    object-fit: cover;
+}
+
+.name {
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+}
+
+.tel-number {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.address {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.dark {
+    width: 100vw;
+    height: 44px;
+    background: #16758A;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .about {
+        height: 900px;
+        flex-wrap: wrap;
+    }
+
+    .lucas-big-img {
+        width: 762px;
+        height: 355px;
+        object-fit: cover;
+        margin-right: 0;
+    }
+
+    .info {
+        width: 762px;
+    }
+
+    .header-text {
+        width: 762px;
+    }
+
+    .gallery {
+        height: 650px;
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+    }
+
+    
+
+    .container {
+        width: 762px;
+        margin-top: 50px;
+    }
+
+    .img-item {
+        width: 180px;
+        height: 180px;
+        margin-right: 14px;
+    }
+}
+
+
+
+
+@media screen and (max-width:375px) {
+
+
+    .lucas-big-img {
+        width: 341px;
+    }
+
+    .about {
+        height: 1000px;
+        flex-wrap: wrap;
+
+    }
+
+    .info {
+        width: 341px;
+    }
+
+    .header-text {
+        width: 341px;
+    }
+
+    .contact {
+        width: 341px;
+    }
+
+    .gallery {
+        height: 1000px;
+    }
+
+    .container {
+        width: 345px;
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gallery-text {
+        width: 345px;
+    }
+
+    .img-item {
+        width: 165px;
+        height: 165px;
+        margin-right: 14px;
+    }
+
+    .img-item:nth-child(2n) {
+        margin-right: 0;
+    }
+
+
+    
+
+
+}
