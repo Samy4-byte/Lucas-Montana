@@ -1,284 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@import url(./contact.css);
+@import url(./img.css);
+
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu', sans-serif;
     font-style: normal;
-    font-weight: 700;
-    color: #FFFFFF;
+    letter-spacing: 0.01em;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #ffff;
+
 }
 
 body {
-    background: #272A2F;
-
+    background-color: #272A2F;
+    z-index: 0;
 }
 
-header {
-    width: 100vw;
-    height: 58px;
-    background: #19849B;
+section {
+    padding: 0 30px;
+}
+
+.header {
     position: fixed;
+    background-color: #19849B;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 58px;
+    top: 0;
+    z-index: 5;
 }
 
-.logo {
+.header .logo {
+    text-decoration: none;
+    font-weight: 700;
     font-size: 30px;
     line-height: 34px;
     text-transform: uppercase;
-    text-decoration: none;
 }
 
-.about {
-    width: 100vw;
-    height: 510px;
+.main {
     display: flex;
     justify-content: center;
-}
-
-.lucas-big-img {
-    width: 411px;
+    align-items: center;
+    width: 100%;
     height: 355px;
     margin-top: 109px;
+}
+
+.main .photo-main {
+    width: 411px;
     margin-right: 68px;
 }
 
-.info {
+.main-introduce {
+    display: flex;
+    flex-direction: column;
     width: 559px;
-    margin-top: 109px;
 }
 
-.header-text {
-    width: 559px;
-    border-bottom: 4px solid #19849B;
-    padding-bottom: 14px;
-}
-
-.header-text h1 {
+.main-introduce h1 {
+    font-weight: 700;
     font-size: 30px;
     line-height: 34px;
+    border-bottom: 4px solid #19849B;
+    padding-bottom: 15px;
 }
 
-.info-text {
+.main-introduce h2 {
+    font-weight: 700;
     font-size: 24px;
     line-height: 28px;
-    margin-top: 14px;
+    margin-top: 15px;
     margin-bottom: 30px;
 }
 
-.info-p {
+.main-introduce p {
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
-    margin-bottom: 30px;
 }
 
-
-.contact {
+.main-introduce button {
+    background-color: #272A2F;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
     width: 293px;
     height: 50px;
-    font-size: 18px;
-    line-height: 21px;
-    text-transform: uppercase;
-    background-color: #272A2F;
-    border: solid 2px;
+    border-color: #ffff;
+    margin-top: 30px;
 }
-
-.contact:hover {
-    background-color: #19849B;;
-    border: none;
-}
-
 
 .gallery {
-    width: 100vw;
-    height: 890px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-}
-
-.container {
-    width: 1038px;
+    width: 100%;
+    height: 100%;
+    margin-top: 104px;
+    margin-bottom: 99px;
 }
 
 .portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1038px;
+}
+
+.portfolio h3 {
+    font-weight: 700;
     font-size: 24px;
     line-height: 28px;
+    letter-spacing: 0.01em;
     margin-bottom: 15px;
 }
 
-.gallery-text {
-    width: 766px;
+.portfolio p {
+    width: 75%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
     margin-bottom: 28px;
 }
 
 
-.img-item {
-    width: 244px;
-    height: 244px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    object-fit: cover;
-}
-
-.img-item:nth-of-type(4n) {
-    margin-right: 0;
-}
-
-
-.ligth {
-    width: 100vw;
-    height: 161px;
-    background: #19849B;
+.light {
+    background-color: #19849B;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    width: 100%;
+    height: 205px;
 }
 
-.lucas-small-img {
+.light .small-photo {
     width: 94px;
     height: 94px;
     border-radius: 50%;
-    margin-right: 16px;
     object-fit: cover;
+    margin-right: 35px;
 }
 
-.name {
+.footer-contact h6 {
+    font-weight: 700;
     font-size: 22px;
     line-height: 25px;
-    letter-spacing: 0.01em;
     text-transform: uppercase;
-}
-
-.tel-number {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    margin-top: 6px;
     margin-bottom: 6px;
 }
 
-.address {
+.footer-contact .tel-number {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+
+.footer-contact .adress {
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
-    color: #FFFFFF;
+    margin-top: 6px;
+
 }
 
 .dark {
-    width: 100vw;
-    height: 44px;
-    background: #16758A;
+    background-color: #16758A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
-    letter-spacing: 0.01em;
-    color: rgba(255, 255, 255, 0.7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    height: 44px;
+}
+
+button:hover {
+    border: none;
+    background-color: #19849B;
+    cursor: pointer;
 }
 
 
 
 @media screen and (max-width: 900px) {
-    .about {
-        height: 900px;
-        flex-wrap: wrap;
+    section {
+        padding: 0 20px;
     }
 
-    .lucas-big-img {
+    .main {
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+    }
+
+    .main .photo-main {
         width: 762px;
         height: 355px;
         object-fit: cover;
         margin-right: 0;
+        margin-bottom: 65px;
     }
 
-    .info {
-        width: 762px;
-    }
-
-    .header-text {
+    .main .main-introduce {
+        display: flex;
+        justify-content: start;
         width: 762px;
     }
 
     .gallery {
-        height: 650px;
+        height: 100%;
+        margin-bottom: 0;
+    }
+
+    .portfolio {
         display: flex;
-        justify-content: center;
-        padding-top: 50px;
+        width: 766px;
     }
 
-    
-
-    .container {
-        width: 762px;
-        margin-top: 50px;
-    }
-
-    .img-item {
-        width: 180px;
-        height: 180px;
-        margin-right: 14px;
+    .portfolio p {
+        width: 100%;
     }
 }
 
+@media screen and (max-width: 375px) {
 
-
-
-@media screen and (max-width:375px) {
-
-
-    .lucas-big-img {
-        width: 341px;
-    }
-
-    .about {
-        height: 1000px;
+    .main {
         flex-wrap: wrap;
-
+        width: 100%;
     }
 
-    .info {
+    .main .photo-main {
+        width: 341px;
+        height: 355px;
+        object-fit: cover;
+        margin-right: 0;
+        margin-bottom: 65px;
+    }
+
+    .main .main-introduce {
+        display: flex;
         width: 341px;
     }
 
-    .header-text {
-        width: 341px;
-    }
-
-    .contact {
+    .main button {
         width: 341px;
     }
 
     .gallery {
-        height: 1000px;
+        height: 100%;
+        margin-top: 50px;
     }
 
-    .container {
-        width: 345px;
-        height: 90px;
-        display: flex;
-        flex-direction: column;
+    .portfolio {
+        width: 341px;
     }
 
-    .gallery-text {
-        width: 345px;
+    .portfolio p {
+        width: 341px;
     }
-
-    .img-item {
-        width: 165px;
-        height: 165px;
-        margin-right: 14px;
-    }
-
-    .img-item:nth-child(2n) {
-        margin-right: 0;
-    }
-
-
-    
-
-
 }

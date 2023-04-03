@@ -1,0 +1,107 @@
+.img-wrapper {
+    background-color: rgba(25, 131, 155, 0.726);
+    width: 244px;
+    height: 244px;
+    transition: 0.4s;
+    background-image: url(./images/lupa.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img-item {
+    cursor: pointer;
+    width: 244px;
+    height: 244px;
+    transition: 0.4s;
+    object-fit: cover;
+}
+
+.img-item:hover {
+    opacity: 0.5;
+}
+
+.img-box {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.image-modal-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(25, 132, 155, 0.3);
+    position: fixed;
+    top: 0;
+    z-index: 50;
+}
+
+.image-modal-wrapper img {
+    display: block;
+    object-fit: cover;
+    margin-top: 80px;
+}
+
+.close-btn {
+    width: 106px;
+    height: 38px;
+    background: rgba(25, 132, 155, 0.3);
+    border-color: #ffff;
+    font-family: 'Raleway';
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 19px;
+    position: fixed;
+    top: -1%;
+    right: 25%;
+    margin-top: 60px;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .portfolio {
+        margin-bottom: 51px;
+    }
+
+    .img-wrapper {
+        width: 180px;
+        height: 180px;
+    }
+
+    .img-item {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .close-btn {
+        position: fixed;
+        top: -2%;
+        right: 25%;
+    }
+}
+
+
+
+@media screen and (max-width: 376px) {
+
+    .img-wrapper {
+        width: 160px;
+        height: 160px;
+    }
+
+    .img-item {
+        width: 160px;
+        height: 160px;
+        object-fit: cover;
+    }
+
+    .img-box {
+        gap: 15px;
+    }
+}
